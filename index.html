@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medida</title>
+    <style>
+    
+        #contenedor{
+            background-image: url(css.jpeg);
+            text-align: center;
+            height: 100%;
+            font-family: 'system-ui';
+            padding: 20px;
+            background-attachment: fixed, scroll;
+        }
+
+        h1,h3{
+            text-transform: uppercase;
+            color:rgb(255, 255, 255);
+            
+        }
+       
+
+        h3{
+            font-size: 100%;
+            font-weight: bold;
+            padding: 7px 3px;
+            border-radius: 5px;
+            background-color: #980f6ec7;
+            width: 25%;
+            text-align: center;
+        }
+
+        .tabla{
+            background-color: aliceblue;
+            font-size: 1em;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        th{
+            background-color: cadetblue;
+            color: aliceblue;
+            padding: 5px;
+            border: 1px solid;
+            border-radius: 3px;
+        }
+
+        h3:hover{
+            font-size: 200%;
+            width: 40%;
+        }
+
+      
+        .titulo{
+            letter-spacing: 1px;
+            word-spacing: 3px;
+            background-color: #4a4fd2;;
+            margin: 0px 37%;
+            padding: 7px;
+            border-radius: 5px;
+            background: linear-gradient(100deg,#4a4fd2 0%, #980f6ec7);
+        }
+        td{
+            padding: 10px;
+            margin: 10px;
+
+        }
+    </style>   
+    
+
+</head>
+<body>
+    <section id="contenedor" >
+        <br>
+        <div class="titulo">
+            <h1>Unidades de Medida</h1>
+        </div>
+        <br>      
+        <h3>1. Unidades Absolutas</h3>
+        <table class="tabla">
+                <tr>
+                    <th></th>
+                    <th>Para qué se usa</th>
+                    <th>Ventajas</th>
+                    <th>Desventajas</th>                    
+                </tr>
+                <tr>
+                    <th>PT</th>
+                    <td> Se trata de la unidad de medida preferida para establecer el tamaño del texto en los documentos que se van a imprimir.</td>
+                    <td>Su valor es directamente el valor que se debe utilizar, sin necesidad de realizar cálculos intermedios.</td>
+                    <td>Es muy poco flexible y no se adapta fácilmente a los diferentes medios.</td>                    
+                </tr>
+
+        </table>
+        <br>
+        <br>
+        <h3>2. Unidades Relativas</h3>
+        <table class="tabla" >
+                <tr>
+                    <th></th>
+                    <th>Para qué se usa</th>
+                    <th>Ventajas</th>
+                    <th>Desventajas</th>
+                    <th>Diferencias</th>                    
+                </tr>
+                <tr>
+                    <th>PX</th>
+                    <td>Unidad relativa respecto de la resolución de la pantalla del dispositivo en el que se visualiza la página HTML.</td>
+                    <td>Es más fácil de usar que otras medidas.</td>
+                    <td>Hay quienes dicen que su uso está obsoleto. Por ejemplo, al utilizar px en font-size, el usuario no podrá modificar el tamaño de la letra en su navegador.</td>
+                    <td>Tienen una resolución fija determinada por la cantidad de pixeles almacenados.</td>
+                </tr>
+                <tr>
+                    <th>%</th>
+                    <td>Unidad de medición basada en porcentaje. Cada una de las propiedades de CSS que permiten indicar como valor un porcentaje, define el valor al que hace referencia ese porcentaje.</td>
+                    <td>Es relativa al elemento padre, por lo que implica una buena flexibilidad.</td>
+                    <td>No brindan un valor absoluto a los elementos.</td>
+                    <td>Varía en relación al elemento al que hace referencia.</td>
+                </tr>
+                <tr>
+                    <th>EM</th>
+                    <td>Unidad de longitud en tipografía y hojas de estilo, representa la altura de la fuente de un elemento. Relativa respecto del tamaño de letra del elemento.</td>
+                    <td>Usar unidades em para tamaño que deberían escalarse dependiendo del tamaño de la fuente de un elemento además de la raíz.</td>
+                    <td>Es necesario realizar un cálculo matemático para determinar el valor real.
+                    </td>
+                    <td>Depende del elemento padre.</td>
+                </tr>
+                <tr>
+                    <th>REM</th>
+                    <td>Unidad de medida para indicar el tamaño de la letra del elemento raíz.</td>
+                    <td>Usar unidades rem para tamaño que no necesitan unidades em , y que deberían escalar dependiendo de la configuración del tamaño de la fuente del navegador.</td>
+                    <td>Es necesario realizar un cálculo matemático para determinar el valor real.
+                    </td>
+                    <td>Depende del elemento raíz.</td>
+                </tr>
+                <tr>
+                    <th>VH</th>
+                    <td>Medición basada en la altura de la pantalla.</td>
+                    <td>Las medidas vh y vw nos sirven mucho para determinadas tareas que deseemos hacer como: la imagen de fondo o el tamaño de texto según el viewport.</td>
+                    <td>En safari y chrome de iOS 6 y 7, vh genera un comportamiento erróneo.</td>
+                    <td>Relativa a la altura de la ventana gráfica.</td>
+                </tr>
+                <tr>
+                    <th>VW</th>
+                    <td>Medición basada en lo ancho de la pantalla.</td>
+                    <td>Las medidas vh y vw nos sirven mucho para determinadas tareas que deseemos hacer como: la imagen de fondo o el tamaño de texto según el viewport.</td>
+                    <td>En safari y chrome de iOS 6 y 7, vh genera un comportamiento erróneo.</td>
+                    <td>Relativo al ancho de la ventana gráfica.
+                    </td>
+                </tr>
+
+        </table>
+        
+
+        
+    </section>
+    
+</body>
+</html>
